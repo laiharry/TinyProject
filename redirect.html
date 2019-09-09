@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script>
         function onLoad() {
-            window.open('http://laiharrysir.byethost15.com/TinyProject/MyDrag/', '_self');
+//            window.open('http://laiharrysir.byethost15.com/TinyProject/MyDrag/', '_self');
 //            window.location.replace("http://laiharrysir.byethost15.com/TinyProject/MyDrag/");
 //            document.addEventListener("deviceready", onDeviceReady, false);
         }
         function onDeviceReady() {
-            window.open('http://laiharrysir.byethost15.com/TinyProject/MyDrag/', '_self');
+//            window.open('http://laiharrysir.byethost15.com/TinyProject/MyDrag/', '_self');
         }
         function linkTo(url) {
-            window.open(url);
+            window.open(url, '_self');
         }
 
     </script>
@@ -23,8 +23,16 @@
 </head>
 
 <body onload="onLoad()">
-    <a href="http://cpanel.byethost.com/">Byethost cPanel: b15_19442519</a><br>
-    <a href="http://laiharrysir.byethost15.com/TinyProject/MyDrag/">MyDrag</a>
-    <div onclick="linkTo('http://google.com')">Google</div>
+    <h1>HTTP Links</h1>
+    <div onclick="linkTo('http://cpanel.byethost.com/')">Byethost cPanel: b15_19442519</div><br>
+    <div onclick="linkTo('http://laiharrysir.byethost15.com/TinyProject/MyDrag/')">MyDrag</div><br>
+    <div onclick="linkTo('http://laiharrysir.byethost15.com/TinyProject/OverlayYoutube/')">OverlayYoutube</div><br>
+    <div onclick="linkTo('http://laiharrysir.byethost15.com/TinyProject/OverlayHTMLAnimation/')">OverlayHTMLAnimation</div><br>
+
+    <h1>Local Links</h1>
+    <div onclick="linkTo('./MyDrag/index.html')">MyDrag</div><br>
+    <div onclick="linkTo('./OverlayYoutube/index.html')">OverlayYoutube</div><br>
+    <div onclick="linkTo('./OverlayHTMLAnimation/index.html')">OverlayHTMLAnimation</div><br>
+
 </body>
 </html>
