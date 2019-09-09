@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        #closeOverlay {
+            position: fixed;
+            display: inherit;
+            width: 10%;
+            height: 10%;
+            top: 5%;
+            left: 5%;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0.5);
+            cursor: pointer;
+        }
+
+        #animationBG {
+            position: fixed;
+            display: inherit;
+            top: 20%;
+            left: 5%;
+            width: 500px;
+            height: 700px;
+            background-color: aquamarine;
+
+        }
+
+        #diva {
+            position: relative;
+            width: 225px;
+            height: 400px;
+            background-image: url("./res/img/sprite.png");
+            animation: gangham 4s steps(23, start) infinite,
+                movearound 12s steps(69, end) infinite alternate 44ms;
+            animation-direction: normal, alternate;
+        }
+
+        #video {
+            position: fixed;
+            display: inherit;
+            top: 25%;
+            left: 5%;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 0, 0.5);
+        }
+
+        #text {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            font-size: 50px;
+            color: white;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        @keyframes gangham {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: -5175px 0
+            }
+        }
+
+
+        @keyframes movearound {
+            0% {
+                transform: translate(0)
+            }
+
+            100% {
+                transform: translate(350px)
+            }
+        }
+    </style>
+    <title>Overlay</title>
+
+
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="closeOverlay" onclick="off()">Close</div>
+        <div id="animationBG">
+
+        <div id="diva"></div>
+    </div>
+
+        <div id="text">Overlay Text</div>
+    </div>
+    <div id="divContent">
+        <div style="padding:20px">
+            <h2>Overlay with Text</h2>
+            <button onclick="on()">Turn on overlay effect</button>
+        </div>
+        This is background.
+        Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to
+        detract. Forbade concern do private be. Offending residence but men engrossed shy. Pretend am earnest offered
+        arrived company so on. Felicity informed yet had admitted strictly how you.
+
+        Gay one the what walk then she. Demesne mention promise you justice arrived way. Or increasing to in especially
+        inquietude companions acceptance admiration. Outweigh it families distance wandered ye an. Mr unsatiable at
+        literature connection favourable. We neglected mr perfectly continual dependent.
+
+        Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way
+        everything joy alteration boisterous the attachment. Party we years to order allow asked of. We so opinion
+        friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence
+        own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he.
+        Friendly bachelor entrance to on by.
+
+        It as announcing it me stimulated frequently continuing. Least their she you now above going stand forth. He
+        pretty future afraid should genius spirit on. Set property addition building put likewise get. Of will at sell
+        well at as. Too want but tall nay like old. Removing yourself be in answered he. Consider occasion get improved
+        him she eat. Letter by lively oh denote an.
+
+        Name were we at hope. Remainder household direction zealously the unwilling bed sex. Lose and gay ham sake met
+        that. Stood her place one ten spoke yet. Head case knew ever set why over. Marianne returned of peculiar
+        replying in moderate. Roused get enable garret estate old county. Entreaties you devonshire law dissimilar
+        terminated.
+
+        Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here upon. Acuteness you
+        exquisite ourselves now end forfeited. Enquire ye without it garrets up himself. Interest our nor received
+        followed was. Cultivated an up solicitude mr unpleasant.
+
+        Written enquire painful ye to offices forming it. Then so does over sent dull on. Likewise offended humoured mrs
+        fat trifling answered. On ye position greatest so desirous. So wound stood guest weeks no terms up ought. By so
+        these am so rapid blush songs begin. Nor but mean time one over.
+
+        Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved
+        connection alteration appearance my an astonished. Up as seen sent make he they of. Her raising and himself
+        pasture believe females. Fancy she stuff after aware merit small his. Charmed esteems luckily age out.
+
+        Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men
+        day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no
+        property exercise of. Dissimilar comparison no terminated devonshire no literature on. Say most yet head room
+        such just easy.
+
+        And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy. Outward clothes
+        promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference
+        connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day
+        everything.
+    </div>
+
+
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
